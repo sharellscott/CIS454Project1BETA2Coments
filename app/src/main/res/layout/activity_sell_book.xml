@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellBook"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sellbookwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/welcome"
+        android:text="@string/please_enter_your_textbook_information_below"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:visibility="visible"
+        tools:text="Please enter the following information for you textbook below:" />
+
+    <EditText
+        android:id="@+id/sellbooktitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/title"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/sellbookauthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/authorsell"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/sellbookisbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isbnsell"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/sellbookprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/price_xx_xx_format"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/confirmlisting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="140dp"
+        android:onClick="onTouch"
+        android:text="@string/confirm_listing"
+        tools:text="Confirm" />
+</LinearLayout>

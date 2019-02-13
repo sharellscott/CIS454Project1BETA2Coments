@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buytextbook"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="203dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toStartOf="@+id/selltextbook"
+        android:layout_toLeftOf="@+id/selltextbook"
+        android:background="@color/design_default_color_primary_dark"
+        android:baselineAligned="false"
+        android:onClick="buyBook"
+        android:text="@string/buy_textbook"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        tools:text="Buy Textbook" />
+
+    <Button
+        android:id="@+id/selltextbook"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="208dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="sellBook"
+        android:text="@string/sell_textbook"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        tools:text="Sell Textbook" />
+
+</RelativeLayout>
